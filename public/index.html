@@ -1,1 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Note</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div>
+        <p class="eyebrow">FULL STACK PROJECT</p>
+        <h1>Quick Note</h1>
+        <p class="subtitle">Create, edit and organize your notes.</p>
+      </div>
+      <button id="newNoteBtn" class="primary">+ New Note</button>
+    </header>
 
+    <section class="composer" id="composer">
+      <h2 id="formHeading">Create a note</h2>
+      <input id="title" type="text" placeholder="Note title">
+      <textarea id="content" rows="5" placeholder="Write your note..."></textarea>
+      <div class="actions">
+        <button id="cancelBtn" class="secondary">Cancel</button>
+        <button id="saveBtn" class="primary">Save Note</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>Your Notes</h2>
+        <span id="count">0 notes</span>
+      </div>
+      <div id="notes" class="grid"></div>
+      <p id="empty" class="empty">No notes yet. Create your first note.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
